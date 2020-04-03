@@ -94,5 +94,5 @@ theme: Nlvi
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:strazzere/recipe.git
+  repo: git@github.com:strazzere/recipes.git
   branch: gh-pages
