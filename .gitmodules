@@ -1,0 +1,3 @@
+[submodule "themes/miho"]
+	path = themes/miho
+	url = https://github.com/WongMinHo/hexo-theme-miho.git
