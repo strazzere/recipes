@@ -8,7 +8,7 @@ language: en
 timezone: America/Los_Angeles
 
 # URL
-url: http://recipes.strazzere.com
+url: https://recipes.strazzere.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
