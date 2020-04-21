@@ -27,7 +27,7 @@ Gotcha's I found while making this;
 
  Below yields 2-3 loaves, though it seems like the perfect amount for 2 good sized loaves in my testing.
 
- ## Ingredients
+## Ingredients
 (dry)
  * 907g flour
  * 14g of instant yeast (SAF-Instant is what I've used)
