@@ -1,6 +1,6 @@
 ---
 title: low-knead-crusty-bread
-date: 2020-04-19 11:08:38
+date: 2020-04-19
 tags:
  - baking
  - dinner
@@ -11,6 +11,8 @@ tags:
 categories:
  - baking
 ---
+
+![Bebop wants BREAD](/images/crusty-bread.jpg)
 
 The easiest bread making recipe I've found, somewhat of a mixture of other recipes, but changes slightly to work for me in Oakland, as I work from home, during the COVID-19 issues.
 
