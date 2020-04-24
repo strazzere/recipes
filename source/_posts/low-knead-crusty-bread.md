@@ -30,6 +30,7 @@ Gotcha's I found while making this;
 ## Ingredients
 (dry)
  * 907g flour
+   * when making "sandwich bread" I do 807g white flour and 100g rye
  * 14g of instant yeast (SAF-Instant is what I've used)
  * 1 Tablespoon of coarse sea salt
 
@@ -77,7 +78,7 @@ Gotcha's I found while making this;
 * Add rosemary or other dry herbs with the rest of the dry ingredients.
 * Just divide the ingredient in half if need be, keep the ratios. Everything in half will
   make one really good loaf
+* As noted under directions, for sandwich bread (bit more savory) use 100g of rye flour and the rest white flour
 
 ## TODO:
-* Picture(s) during next time making them
 * Figure out how to add olives/etc similar to Flying Pig bread.
