@@ -48,7 +48,7 @@ toc: true
 
 # Use copyright infomation
 copyright:
-  enable: true
+  enable: false
   # license:
 
 #Reword button or message(fill your QRCode of any Pay.)
