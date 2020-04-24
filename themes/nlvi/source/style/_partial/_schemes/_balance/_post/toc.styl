@@ -1,0 +1,43 @@
+.post-toc
+  position: fixed
+  top: 0
+  bottom: 0
+  left: 100px
+  width: 198px
+  margin: 230px yard
+  padding: (yard*2) 0
+  line-height: line-height
+  overflow: auto
+  transition-sign()
+  &.hide
+    opacity: 0
+  .toc-item
+    list-style: none
+    padding-left: yard
+  .toc-link
+    word-break: break-all
+    &.active
+      @extends .iconfont
+      &:before
+        content: '\e7eb'
+        color: $theme-color-main
+      .toc-text
+        padding: 0 (yard/2)
+        font-weight: bold
+  .toc
+    margin: 0
+    padding: 0
+  .toc-child
+    margin: 0
+    padding: 0
+  .title
+    text-align: center
+    font-weight: bold
+    margin: yard 0
+    > span
+      padding: (yard/2) 0
+      border-bottom: 1px solid $theme-color-main
+  +mobile()
+    display none
+  +tablet()
+    display none

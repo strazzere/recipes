@@ -1,0 +1,68 @@
+.post-toc
+  position fixed
+  top 0
+  right 0
+  bottom 0
+  width 200px
+  margin 230px 0
+  margin-right: (yard*2)
+  line-height: line-height
+  .toc-inner
+    padding: 0 (yard*2)
+    opacity: 0
+    height: 90%
+    transform-origin: right center
+    transform: rotateY(70deg)
+    transition-sign()
+    transition-delay: 100ms
+    overflow: auto
+    &::-webkit-scrollbar
+      width 1px
+    &.show
+      opacity: 1
+      transform: rotateY(0deg)
+  .toc-item
+    list-style: none
+    padding-left: (yard*2)
+  .toc-link
+    word-break: break-all
+    &.active
+      @extends .iconfont
+      &:before
+        content: '\e7eb'
+        color: $theme-color-main
+      .toc-text
+        padding: 0 (yard/2)
+        font-weight: bold
+  .toc
+    margin: 0
+    padding: 0
+  .toc-child
+    margin: 0
+    padding: 0
+  .title
+    position relative
+    text-align: center
+    font-weight: bold
+    margin: yard 0
+    cursor: pointer
+    padding: (yard/2) 0
+    opacity: 0.5
+    &:after
+      content: ''
+      position: absolute
+      left: 50%
+      right: 50%
+      bottom: 0
+      height: 1px
+      background-color $theme-color-main
+      transition-sign()
+    &.show
+      opacity: 1
+      &:after
+        left: 30%
+        right: 30%
+  +mobile()
+    display none
+  +tablet()
+    display none

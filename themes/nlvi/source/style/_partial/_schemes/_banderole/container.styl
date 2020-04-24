@@ -1,0 +1,30 @@
+body
+  &.under
+    overflow-y: hidden
+
+.container
+  position: relative
+  .container-inner
+    width: 100%
+    margin-top: 122px
+    transition-sign()
+    +mobile()
+      margin-top: 72px
+    &.under
+      border-radius: 12px
+      transform: scale(0.95)
+      transform-origin: top
+      filter: blur(16px)
+    &.has_toc
+      padding-left: yard
+      padding-right: 200px
+      +tablet()
+        padding: 0
+
+.main
+  max-width: max-width
+  margin: 0 auto
+  +tablet()
+    width: 100%
+    max-width: 100%
+    padding: 0 (yard*2)

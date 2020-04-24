@@ -1,0 +1,96 @@
+$bgStyle = hexo-config("mobile-header")
+if $bgStyle == 'light'
+  $backgroundColor = #fff
+  $fontColor = $theme-color-main
+else
+  $backgroundColor = #666
+  $fontColor = #fff
+
+.mobile-header
+  display: none
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  z-index: 50
+  +mobile()
+    display: block
+  .mobile-header-nav
+    +flex-wrapper(row)
+      justify-content: space-between
+    background-color: $backgroundColor
+    color: $fontColor
+    min-height: 48px
+    height: 48px
+    .mobile-header-item
+      flex: .5
+      height: @width
+      color: inherit
+    .mobile-header-title
+      flex: 1
+      text-align: center
+      color: inherit
+      font-weight: 300
+      font-size: initial
+      a
+        font-family: $header-fonts
+        text-decoration: none
+        font-size: 32px
+        color: inherit
+        line-height: 1
+  .header-menu-item
+    position: relative
+    padding: 0 16px
+    box-sizing: border-box
+    height: 100%
+    display: flex
+    align-items: center
+  &.header-scroll
+    transition-sign()
+    box-shadow: -4px -1px 8px mix(#fff, $theme-color-main)
+.mobile-header-body
+  display: none
+  width: 100%
+  &.show
+    display: block
+  .mobile-header-list
+    list-style: none
+    margin: 0
+    padding: 0
+    text-align: center
+    .mobile-nav-item
+      line-height: 1.5
+      padding: yard 0
+      border-bottom: 1px solid $theme-line-color
+      a
+        color: $theme-color-main
+      &:last-child
+        border-bottom-color: transparent
+
+.header-menu-line
+  position: relative
+  width: 20px
+  height: 1px
+  background-color: $theme-color-main
+  transform-origin: center
+  transition-sign(all)
+  &:before
+    position: absolute
+    top: 50%
+    left: 50%
+    content: ''
+    width: 10px
+    height: 10px
+    border: 1px solid transparent
+    border-width: 1px 0 0 1px
+    transform-origin: center
+    transition-sign(all)
+
+  &.show
+    transform: rotate(-90deg)
+    background-color: transparent
+    &:before
+      transform: rotate(135deg) translate(10%, 80%)
+      border-color: $theme-color-main
+
+

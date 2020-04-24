@@ -1,0 +1,83 @@
+.header
+  position: fixed
+  top: 0
+  z-index: 9
+  width: 100%
+  padding: (yard*3) 0
+  background-color #fff
+  transition-sign(all)
+  flex-wrapper(row)
+  headerStyle()
+  +mobile()
+    display none
+  .header-wrapper
+    +flex-wrapper(row)
+      justify-content: space-between
+    width: 100%
+    font-size: 16px
+    color: $theme-text-color-sub
+    padding: 0 (yard*5)
+  .logo
+    flex-wrapper(row)
+    -webkit-user-select: none
+    -moz-user-select: none
+    user-select: none
+    font-size: 42px
+    font-family: $header-fonts
+    margin-left: (yard*2)
+    a
+      color: inherit
+      text-decoration: none
+      font-weight: 100;
+    span
+      display: block
+      text-align: left
+    #subtitle
+      opacity: 0
+      position: absolute
+      margin-top: (yard/4)
+      font-size: 12px
+      width: 100%
+      font-family: $normal-fonts
+      transition-sign(opacity)
+  .logo-inner
+    position: relative
+    width: 100%
+    max-width: 100%
+    h1
+      margin: 0
+      &:hover+#subtitle
+        opacity: 1
+  .main-nav
+    display: flex
+    justify-content: flex-end
+    +tablet()
+      flex: 2
+
+  .main-nav-list
+    padding: 0
+    list-style: none
+    .menu-item
+      display: inline-block
+      margin-right: (yard*2)
+      a
+        text-decoration: none
+        color: inherit
+        font-size: inherit
+        text-align: center
+        letter-spacing: 1.2px
+        transition-sign()
+        &:hover
+          text-shadow: 1px 1px 0px #d6d6d6
+          color: $theme-color-link
+
+  &.header-scroll
+    padding: yard 0
+    box-shadow: -4px -1px 8px mix(#fff, $theme-color-main)
+    &.header-hide
+      opacity: 0
+    #subtitle
+      opacity: 0 !important
+  &.melt
+    opacity: 0
+    transition-sign(opacity)
