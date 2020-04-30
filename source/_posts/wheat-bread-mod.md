@@ -1,7 +1,15 @@
 ---
 title: Wheat Sandwich Bread
-date: 2020-04-29 11:32:30
+date: 2020-04-29
 tags:
+ - baking
+ - dinner
+ - lunch
+ - sandwich
+ - same-day
+
+categories:
+ - baking
 ---
 
 
